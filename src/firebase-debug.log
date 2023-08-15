@@ -1,0 +1,69 @@
+[debug] [2023-08-15T13:44:48.859Z] ----------------------------------------------------------------------
+[debug] [2023-08-15T13:44:48.873Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USURIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-08-15T13:44:48.873Z] CLI Version:   12.4.7
+[debug] [2023-08-15T13:44:48.874Z] Platform:      win32
+[debug] [2023-08-15T13:44:48.874Z] Node Version:  v20.5.0
+[debug] [2023-08-15T13:44:48.874Z] Time:          Tue Aug 15 2023 10:44:48 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-08-15T13:44:48.874Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-15T13:44:49.040Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-15T13:44:49.040Z] > authorizing via signed-in user (santinomundoelectro@gmail.com)
+[debug] [2023-08-15T13:44:49.041Z] [iam] checking project mundo-electro-ce2e9 for permissions ["firebase.projects.get"]
+[debug] [2023-08-15T13:44:49.043Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions [none]
+[debug] [2023-08-15T13:44:49.043Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions x-goog-quota-user=projects/mundo-electro-ce2e9
+[debug] [2023-08-15T13:44:49.043Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-15T13:44:49.961Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions 200
+[debug] [2023-08-15T13:44:49.961Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-15T13:44:49.962Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 [none]
+[debug] [2023-08-15T13:44:50.377Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 200
+[debug] [2023-08-15T13:44:50.377Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 {"projectId":"mundo-electro-ce2e9","projectNumber":"814315190532","displayName":"Mundo Electro","name":"projects/mundo-electro-ce2e9","resources":{"hostingSite":"mundo-electro-ce2e9","realtimeDatabaseInstance":"mundo-electro-ce2e9-default-rtdb","storageBucket":"mundo-electro-ce2e9.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_84955c10-f629-4b4e-b065-9106b49643fb"}
+[info] 
+[info] === Serving from 'C:\Users\USURIO\Desktop\react-firebase-auth-master-main'...
+[info] 
+[debug] [2023-08-15T13:44:50.382Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/sites 
+[debug] [2023-08-15T13:44:51.445Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/sites 200
+[debug] [2023-08-15T13:44:51.445Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/sites {"sites":[{"name":"projects/mundo-electro-ce2e9/sites/mundo-electro-ce2e9","defaultUrl":"https://mundo-electro-ce2e9.web.app","appId":"1:814315190532:web:8c15638a1413c920657851","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-15T13:44:51.445Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/webApps/1:814315190532:web:8c15638a1413c920657851/config [none]
+[debug] [2023-08-15T13:44:52.419Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/webApps/1:814315190532:web:8c15638a1413c920657851/config 200
+[debug] [2023-08-15T13:44:52.419Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/webApps/1:814315190532:web:8c15638a1413c920657851/config {"projectId":"mundo-electro-ce2e9","appId":"1:814315190532:web:8c15638a1413c920657851","databaseURL":"https://mundo-electro-ce2e9-default-rtdb.firebaseio.com","storageBucket":"mundo-electro-ce2e9.appspot.com","locationId":"us-central","apiKey":"AIzaSyDCjeU0inSn06N5R3xZGgcHDq5RB24Iy5Q","authDomain":"mundo-electro-ce2e9.firebaseapp.com","messagingSenderId":"814315190532","measurementId":"G-9G6T0NWL52"}
+[debug] [2023-08-15T13:44:52.425Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 [none]
+[debug] [2023-08-15T13:44:52.755Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 200
+[debug] [2023-08-15T13:44:52.755Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 {"projectId":"mundo-electro-ce2e9","projectNumber":"814315190532","displayName":"Mundo Electro","name":"projects/mundo-electro-ce2e9","resources":{"hostingSite":"mundo-electro-ce2e9","realtimeDatabaseInstance":"mundo-electro-ce2e9-default-rtdb","storageBucket":"mundo-electro-ce2e9.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_84955c10-f629-4b4e-b065-9106b49643fb"}
+[info] i  hosting[mundo-electro-ce2e9]: Serving hosting files from: src {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1msrc\u001b[22m"}}
+[info] +  hosting[mundo-electro-ce2e9]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [15/Aug/2023:13:44:55 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Aug/2023:13:44:55 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [15/Aug/2023:13:46:03 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Aug/2023:13:46:03 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36\""}}
+[debug] [2023-08-15T13:46:31.430Z] ----------------------------------------------------------------------
+[debug] [2023-08-15T13:46:31.433Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USURIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-08-15T13:46:31.433Z] CLI Version:   12.4.7
+[debug] [2023-08-15T13:46:31.434Z] Platform:      win32
+[debug] [2023-08-15T13:46:31.434Z] Node Version:  v20.5.0
+[debug] [2023-08-15T13:46:31.434Z] Time:          Tue Aug 15 2023 10:46:31 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-08-15T13:46:31.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-15T13:46:31.597Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-15T13:46:31.598Z] > authorizing via signed-in user (santinomundoelectro@gmail.com)
+[debug] [2023-08-15T13:46:31.598Z] [iam] checking project mundo-electro-ce2e9 for permissions ["firebase.projects.get"]
+[debug] [2023-08-15T13:46:31.600Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions [none]
+[debug] [2023-08-15T13:46:31.601Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions x-goog-quota-user=projects/mundo-electro-ce2e9
+[debug] [2023-08-15T13:46:31.601Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-15T13:46:40.176Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions 200
+[debug] [2023-08-15T13:46:40.176Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mundo-electro-ce2e9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-15T13:46:40.177Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 [none]
+[debug] [2023-08-15T13:46:40.561Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 200
+[debug] [2023-08-15T13:46:40.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 {"projectId":"mundo-electro-ce2e9","projectNumber":"814315190532","displayName":"Mundo Electro","name":"projects/mundo-electro-ce2e9","resources":{"hostingSite":"mundo-electro-ce2e9","realtimeDatabaseInstance":"mundo-electro-ce2e9-default-rtdb","storageBucket":"mundo-electro-ce2e9.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_84955c10-f629-4b4e-b065-9106b49643fb"}
+[info] 
+[info] === Serving from 'C:\Users\USURIO\Desktop\react-firebase-auth-master-main'...
+[info] 
+[debug] [2023-08-15T13:46:40.567Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/sites 
+[debug] [2023-08-15T13:46:41.724Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/sites 200
+[debug] [2023-08-15T13:46:41.724Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/sites {"sites":[{"name":"projects/mundo-electro-ce2e9/sites/mundo-electro-ce2e9","defaultUrl":"https://mundo-electro-ce2e9.web.app","appId":"1:814315190532:web:8c15638a1413c920657851","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-15T13:46:41.725Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/webApps/1:814315190532:web:8c15638a1413c920657851/config [none]
+[debug] [2023-08-15T13:46:42.751Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/webApps/1:814315190532:web:8c15638a1413c920657851/config 200
+[debug] [2023-08-15T13:46:42.751Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9/webApps/1:814315190532:web:8c15638a1413c920657851/config {"projectId":"mundo-electro-ce2e9","appId":"1:814315190532:web:8c15638a1413c920657851","databaseURL":"https://mundo-electro-ce2e9-default-rtdb.firebaseio.com","storageBucket":"mundo-electro-ce2e9.appspot.com","locationId":"us-central","apiKey":"AIzaSyDCjeU0inSn06N5R3xZGgcHDq5RB24Iy5Q","authDomain":"mundo-electro-ce2e9.firebaseapp.com","messagingSenderId":"814315190532","measurementId":"G-9G6T0NWL52"}
+[debug] [2023-08-15T13:46:42.756Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 [none]
+[debug] [2023-08-15T13:46:43.047Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 200
+[debug] [2023-08-15T13:46:43.047Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mundo-electro-ce2e9 {"projectId":"mundo-electro-ce2e9","projectNumber":"814315190532","displayName":"Mundo Electro","name":"projects/mundo-electro-ce2e9","resources":{"hostingSite":"mundo-electro-ce2e9","realtimeDatabaseInstance":"mundo-electro-ce2e9-default-rtdb","storageBucket":"mundo-electro-ce2e9.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_84955c10-f629-4b4e-b065-9106b49643fb"}
+[info] i  hosting[mundo-electro-ce2e9]: Serving hosting files from: src {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1msrc\u001b[22m"}}
+[info] +  hosting[mundo-electro-ce2e9]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [15/Aug/2023:13:46:45 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [15/Aug/2023:13:46:45 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36\""}}

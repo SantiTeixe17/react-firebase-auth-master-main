@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { 
+    background-image: url(./images/bg4.jpg) ;
+    position: relative;
+    margin-top: 60px;
+}
+.hoverEffect:hover {
+    color: cyan;
+}
