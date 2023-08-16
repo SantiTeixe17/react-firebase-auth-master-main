@@ -5,14 +5,12 @@ import { Alert } from "./Alert";
 import userImage from "../images/name.svg";
 import  emailImage  from "../images/email.svg";
 import  passwordImage  from "../images/password.svg";
-import telephoneImage from "../images/llamada-telefonica.png";
 
 export function Login() {
   const [user, setUser] = useState({
     email: "",
     password: "",
     username: "",
-    telephone: "",
   });
   const { login, loginWithGoogle, loginWithFacebook ,resetPassword, } = useAuth();
   const [error, setError] = useState("");
@@ -22,7 +20,7 @@ export function Login() {
     e.preventDefault();
     setError("");
     try {
-      await login(user.email, user.password, user.username, user.telephone);
+      await login(user.email, user.password, user.username);
       window.location.replace("");
     } catch (error) {
       setError(error.message);
@@ -130,26 +128,11 @@ export function Login() {
           />
         </div>
 
-        <div className="mb-4">
-          <label
-            htmlFor="telephone"
-            className="block text-gray-700 text-sm rounded-md font-bold mb-2"
-          >
-          <img src={telephoneImage} alt="User Icon" className="mr-2 inline-block w-6 h-6" />
-            Teléfono
-          </label>
-          <input
-            type="telephone"
-            onChange={(e) => setUser({ ...user, telephone: e.target.value })}
-            className="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            placeholder="+541191638454"
-          />
-        </div>
-
         <div className="flex items-center justify-between">
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline"
             type="submit"
+            href=""
           >
             Login
           </button>

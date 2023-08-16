@@ -5,7 +5,6 @@ import { Alert } from "./Alert";
 import userImage from "../images/name.svg";
 import  emailImage  from "../images/email.svg";
 import  passwordImage  from "../images/password.svg";
-import telephoneImage from "../images/llamada-telefonica.png";
 
 export function Register() {
   const { signup } = useAuth();
@@ -14,7 +13,6 @@ export function Register() {
     email: "",
     password: "",
     username: "",
-    telephone: "",
   });
 
   const [error, setError] = useState("");
@@ -24,7 +22,7 @@ export function Register() {
     e.preventDefault();
     setError("");
     try {
-      await signup(user.email, user.password, user.username, user.telephone);
+      await signup(user.email, user.password, user.username);
       navigate("/");
     } catch (error) {
       setError(error.message);
@@ -95,22 +93,6 @@ export function Register() {
             onChange={(e) => setUser({ ...user, password: e.target.value })}
             className="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             placeholder="*************"
-          />
-        </div>
-
-        <div className="mb-4">
-          <label
-            htmlFor="telephone"
-            className="block text-gray-700 text-sm rounded-md font-bold mb-2"
-          >
-          <img src={telephoneImage} alt="User Icon" className="mr-2 inline-block w-6 h-6" />
-            Teléfono
-          </label>
-          <input
-            type="telephone"
-            onChange={(e) => setUser({ ...user, telephone: e.target.value })}
-            className="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            placeholder="+541191638454"
           />
         </div>
 
