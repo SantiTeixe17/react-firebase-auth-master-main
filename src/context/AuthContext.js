@@ -5,7 +5,6 @@ import {
   signOut,
   onAuthStateChanged,
   GoogleAuthProvider,
-  FacebookAuthProvider,
   signInWithPhoneNumber,
   signInWithPopup,
   sendPasswordResetEmail,
@@ -37,11 +36,6 @@ export function AuthProvider({ children }) {
     return signInWithPopup(auth, googleProvider);
   };
 
-  const loginWithFacebook = () => {
-    const facebookProvider = new FacebookAuthProvider();
-    return signInWithPopup(auth, facebookProvider);
-  };
-
   const logout = () => signOut(auth);
 
   const resetPassword = async (email) => sendPasswordResetEmail(auth, email);
@@ -64,7 +58,6 @@ export function AuthProvider({ children }) {
         logout,
         loading,
         loginWithGoogle,
-        loginWithFacebook,
         resetPassword,
         signInWithPhoneNumber,
       }}
