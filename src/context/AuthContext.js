@@ -4,9 +4,6 @@ import {
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
-  GoogleAuthProvider,
-  signInWithPhoneNumber,
-  signInWithPopup,
   sendPasswordResetEmail,
 } from "firebase/auth";
 import { auth } from "../firebase/firestore/firebase";
@@ -31,11 +28,6 @@ export function AuthProvider({ children }) {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const loginWithGoogle = () => {
-    const googleProvider = new GoogleAuthProvider();
-    return signInWithPopup(auth, googleProvider);
-  };
-
   const logout = () => signOut(auth);
 
   const resetPassword = async (email) => sendPasswordResetEmail(auth, email);
@@ -57,9 +49,7 @@ export function AuthProvider({ children }) {
         user,
         logout,
         loading,
-        loginWithGoogle,
         resetPassword,
-        signInWithPhoneNumber,
       }}
     >
       {children}

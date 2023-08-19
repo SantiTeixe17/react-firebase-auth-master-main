@@ -3,29 +3,45 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { Alert } from "./Alert";
 import userImage from "../images/name.svg";
-import  emailImage  from "../images/email.svg";
-import  passwordImage  from "../images/password.svg";
+import emailImage from "../images/email.svg";
+import passwordImage from "../images/password.svg";
 
 export function Register() {
   const { signup } = useAuth();
-
   const [user, setUser] = useState({
     email: "",
     password: "",
     username: "",
   });
-
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const [discountCode, setDiscountCode] = useState("");
+  const [isDiscountValid, setIsDiscountValid] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!isDiscountValid) {
+      setError("Debes ingresar un código de descuento válido para registrarte.");
+      return;
+    }
+
     setError("");
+
     try {
       await signup(user.email, user.password, user.username);
       navigate("/");
     } catch (error) {
       setError(error.message);
+    }
+  };
+
+  const handleApplyDiscount = async () => {
+    if (discountCode === "DESCUENTO123") {
+      setIsDiscountValid(true);
+      setError("");
+    } else {
+      setError("Código de descuento inválido");
     }
   };
 
@@ -96,8 +112,18 @@ export function Register() {
           />
         </div>
 
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline">
-          Registrate
+        <input
+          type="text"
+          placeholder="Código de descuento"
+          value={discountCode}
+          onChange={(e) => setDiscountCode(e.target.value)}
+          className="border border-gray-300 mt-2 rounded px-3 py-2 w-full"
+        />
+        <button
+          onClick={handleApplyDiscount}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md ml-12 focus:outline-none focus:shadow-outline mt-2"
+        >
+          Aplicar Código
         </button>
       </form>
       <p className="my-4 text-white flex justify-between px-3">
