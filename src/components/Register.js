@@ -37,7 +37,7 @@ export function Register() {
   };
 
   const handleApplyDiscount = async () => {
-    if (discountCode === "DESCUENTO123") {
+    if (discountCode === "DISTRIBUIDORES1") {
       setIsDiscountValid(true);
       setError("");
     } else {
